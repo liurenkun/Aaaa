@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/background1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    
+   <RelativeLayout android:orientation="vertical"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/firstName"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="@string/First_Name"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/birthdayInput"
+            android:text="@string/height" />
+        
+        <TextView
+            android:id="@+id/weight"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/heightInput"
+            android:text="@string/weight"/>
+        
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/gender"
+            android:text="Birthday"/>
+
+        <TextView
+            android:id="@+id/lastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/firstNameInput"
+            android:text="@string/Last_Name" />
+
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/firstName"
+            android:ems="10"
+            android:hint="enter your first name" />
+        
+         <com.openIOT.neuLife.EditTextWithDate
+            android:id="@+id/birthdayInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/birthday"
+            android:ems="10"
+            android:hint="Click right icon to select date"  />
+        
+        <EditText
+            android:id="@+id/heightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/height"
+            android:ems="10" 
+            android:hint="height"/>
+        
+        <EditText
+            android:id="@+id/weightInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/weight"
+            android:ems="10"
+            android:hint="weight" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lastName"
+            android:ems="10"
+            android:hint="enter your last name" >
+            <requestFocus />
+        </EditText>
+
+        <Switch
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/lastNameInput"
+            android:text="@string/gender"
+            android:textOff="Male"  
+        	android:textOn="Female" />
+
+        <Spinner
+            android:id="@+id/spinner_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/height"
+            android:layout_toRightOf="@+id/gender" />
+        
+        <Spinner
+            android:id="@+id/spinner_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/weight"
+            android:layout_toRightOf="@+id/gender" />
+
+	</RelativeLayout> 
+        
+	<LinearLayout android:orientation="horizontal"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="10">      
+        <Button
+            android:id="@+id/start"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:text="@string/start" />
+	</LinearLayout> 
+</LinearLayout> 

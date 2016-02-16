@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:background="@drawable/background1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+	<LinearLayout android:orientation="horizontal"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="5">  
+        
+    	<Button
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:text="@string/back" />
+    </LinearLayout>
+    
+    <RelativeLayout android:orientation="vertical"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/emailIpnputTextView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/e_mail"
+            android:layout_marginTop="50dp" />
+
+        <TextView
+            android:id="@+id/passwordInputTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/emailInput"
+            android:text="@string/password" />
+
+        <CheckBox
+            android:id="@+id/agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/passwordInput"
+            android:text="@string/agreement" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/passwordInputTextView"
+            android:ems="10"
+            android:hint="enter password" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/emailIpnputTextView"
+            android:ems="10"
+            android:hint="enter email address" >
+            <requestFocus />
+        </EditText>
+
+	</RelativeLayout> 
+        
+	<LinearLayout android:orientation="horizontal"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="5">      
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+            android:text="@string/Submit" />
+	</LinearLayout> 
+</LinearLayout> 

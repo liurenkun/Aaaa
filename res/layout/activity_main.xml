@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background4"
+    tools:context="com.openIOT.neuLife.MainActivity" >
+
+	<LinearLayout android:orientation="horizontal"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="1">  
+
+    	
+	</LinearLayout>
+	<LinearLayout android:orientation="horizontal"  
+        android:layout_width="fill_parent" android:layout_height="fill_parent"  
+        android:layout_weight="10">
+    	
+    	<Button
+        	android:id="@+id/sign_up"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"
+        	android:text="@string/sign_up"
+        	android:layout_weight="1" />
+
+    	<Button
+        	android:id="@+id/sign_in"
+        	android:layout_width="fill_parent"
+        	android:layout_height="wrap_content"	
+        	android:text="@string/sign_in"
+        	android:layout_weight="1" />
+	    </LinearLayout>
+</LinearLayout>
